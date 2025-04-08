@@ -11,7 +11,7 @@
     <div><b>Comments: </b>Submitted to IEEE Transactions on Audio, Speech and Language Processing.</div>
     <div><b>Abstract: </b>Recent developments in voice conversion (VC) systems aim to improve speech quality and speaker similarity even under challenging background factors, such as noise or reverberation. Although these factors have traditionally been viewed as unwanted interference, they can also provide valuable information in certain applications like movie dubbing or singing voice conversion. In this paper, we present a new approach to VC that allows for better control over background factors like noise and reverberation. Our method is capable of generating both clean and noisy-reverberant converted speech. During inference, we first enhance interfered input speech data using speech enhancement models to reduce noise and reverberation. We also use a denoising model and a reverberation time (T60) estimator to extract important background information from the interfered speech data, which is then used alongside a target speaker’s code to generate converted speech with the background factors. Our experiments show that the use of speech data with various acoustic conditions during training leads to improved speech quality and speaker similarity, even when clean data are not available. Moreover, optimizing the model with clean and pseudo-clean data further enhances the results.
     </div>
-
+    <br>
     <div>
       	<h2><b>Baseline framework</b></h2>
       	<img src="https://od.lk/s/Nl8yMTQ1NTc0MzVf/figure1-5-1.jpg" width="600" height="501">
@@ -25,7 +25,7 @@
 	<li><strong>nc-base</strong> (inputs : pC, NR / outputs : pC)</li>
       </ul>
     </div>
-
+    <br>
     <div>
       	<h2><b>Proposed framework</b></h2>
       	<img src="https://od.lk/s/Nl8yMTQzOTMxNDVf/figure1-6.jpg" width="600" height="501">
@@ -49,21 +49,29 @@
 	<li><strong>nc-16mi</strong> (inputs : pC, pN, pR, NR / outputs : pC, pN, pR, NR)</li>
       </ul>
     </div>
+    <div>
+      <table>
+	<tr>
+	  <th>pC input</th><th>Target spk</th><th>Bkg ref</th>
+	</tr>
+	<tr>
+	  <th style="text-align: left;" colspan="2">Reference:</th>
+	</tr>
+	<tr style="border-top: solid; border-bottom: solid;">
+	  <td>
+	    <audio controls><source src="https://od.lk/s/Nl8yMTQzMzM0MjBf/1_pC.wav"></audio>
+	  </td>
+	  <td>
+	    <audio controls><source src="https://od.lk/s/Nl8yMTQzMzMzNTBf/2_spk.wav"></audio>
+	  </td>
+	  <td>
+	  <audio controls><source src="https://od.lk/s/Nl8yMTQzMzMzNTFf/3_bkg.wav"></audio>
+	  </td>
+	</tr>
+      </table>
+    </div>
     
-    <audio controls>
-        <source src="https://od.lk/s/Nl8yMDM4ODgyMjNf/10001_TF2.wav" type="audio/wav">
-        Your browser does not support the audio element.
-    </audio>
 
-    <audio controls>
-        <source src="https://od.lk/s/Nl8yMDM4ODgyMjNf/10001_TF2.wav" type="audio/wav">
-        Your browser does not support the audio element.
-    </audio>
-
-    <audio controls>
-        <source src="https://od.lk/s/Nl8yMDM4ODgyMjNf/10001_TF2.wav" type="audio/wav">
-        Your browser does not support the audio element.
-    </audio>
 
 </body>
 </html>
