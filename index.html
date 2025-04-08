@@ -11,8 +11,32 @@
     <div><b>Comments: </b>Submitted to IEEE Transactions on Audio, Speech and Language Processing.</div>
     <div><b>Abstract: </b>Recent developments in voice conversion (VC) systems aim to improve speech quality and speaker similarity even under challenging background factors, such as noise or reverberation. Although these factors have traditionally been viewed as unwanted interference, they can also provide valuable information in certain applications like movie dubbing or singing voice conversion. In this paper, we present a new approach to VC that allows for better control over background factors like noise and reverberation. Our method is capable of generating both clean and noisy-reverberant converted speech. During inference, we first enhance interfered input speech data using speech enhancement models to reduce noise and reverberation. We also use a denoising model and a reverberation time (T60) estimator to extract important background information from the interfered speech data, which is then used alongside a target speaker’s code to generate converted speech with the background factors. Our experiments show that the use of speech data with various acoustic conditions during training leads to improved speech quality and speaker similarity, even when clean data are not available. Moreover, optimizing the model with clean and pseudo-clean data further enhances the results.
     </div>
-    
-    <div><img src="https://od.lk/s/Nl8yMTQ1NTc0MzVf/figure1-5-1.jpg" width="600" height="400"></div>
+
+    <div>
+      	<h2><b>Baseline framework</b></h2>
+      	<img src="https://od.lk/s/Nl8yMTQ1NTc0MzVf/figure1-5-1.jpg" width="600" height="501">
+    </div>
+
+    <div>
+      <h3><b>Eleven types of speech were evaluated.</b></h3>
+      <ul>
+        <li><strong>Referenced speech</strong>:</li>
+			<ul>
+				<li>Source: Clean EL speech (<strong>C-EL</strong>), NR EL speech (<strong>NR-EL</strong>).</li>
+				<li>Target: Clean normal speech (<strong>C-SP</strong>).</li>
+			</ul>
+        <li><strong>Converted speech from Baseline 1</strong>:</li>
+		<ul>
+			<li>Conversion in clean condition: <strong>C-B.1</strong></li>
+			<li>Conversion in NR condition: <strong>NR-B.1</strong></li>
+		</ul>
+		<li><strong>Converted speech from Model 1</strong>:</li>
+			<ul>
+				<li>Conversion in clean condition: <strong>C-M.1</strong></li>
+				<li>Conversion in NR condition: <strong>NR-M.1</strong></li>
+			</ul>
+      </ul>
+    </div>
     
     <audio controls>
         <source src="https://od.lk/s/Nl8yMDM4ODgyMjNf/10001_TF2.wav" type="audio/wav">
